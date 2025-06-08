@@ -20,11 +20,11 @@ func comidaCat(qtd int) float64 {
 }
 
 func comidaHamster(qtd int) float64 {
-	return float64(qtd) * 0.25
+	return float64(qtd*25) / 100
 }
 
 func comidaTarantula(qtd int) float64 {
-	return float64(qtd) * float64(0.15)
+	return float64(qtd*15) / 100
 }
 
 func animal(tipo string) (func(int) float64, string) {
